@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Parsing</title>
+  </head>
+  <body>
+    <h3>Convertir une chaine en objet Date.</h3>
+    <p id="demo"></p>
+  </body>
+  <script>
+    var text = '{"Nom":"Boutissante","birth":"2000-10-08","Ville":"Marrakech"}';
+    var obj = JSON.parse(text);
+    obj.birth = new Date(obj.birth);
+    document.getElementById("demo").innerHTML = obj.birth + " " + obj.Nom;
+  </script>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h2>Comvertion d'objet date en chaine JSON par JSON.stringify</h2>
+    <p id="demo"></p>
+  </body>
+  <script>
+    var obj = {
+      Nom: "Boutissante",
+      birth: new Date("2000-10-08"),
+      Ville: "Marrakech",
+    };
+    var text = JSON.stringify(obj);
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</html>

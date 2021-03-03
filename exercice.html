@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice</title>
+  </head>
+  <body>
+    <h3>Liste des voitures avec leurs modeles.</h3>
+    <div></div>
+  </body>
+  <script>
+    var voitures = {
+      Ford: ["Fiesta", "Focus", "Mustang"],
+      BMW: ["320", "X5", "X3"],
+      Fiat: ["500", "Panda"],
+    };
+    for (var cle in voitures) {
+      document.querySelector("div").innerHTML += `
+        <h3>${cle}</h3>
+        ${voitures[cle].join("<br>")}
+        `;
+    }
+  </script>
+</html>

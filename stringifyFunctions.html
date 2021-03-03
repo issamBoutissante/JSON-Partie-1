@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h2>JSON.stringify supprime toues les fonctions</h2>
+    <p id="demo"></p>
+  </body>
+  <script>
+    var obj = {
+      Nom: "Boutissante",
+      age: function () {
+        return 30;
+      },
+      Ville: "Marrakech",
+    };
+    var text = JSON.stringify(obj);
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</html>

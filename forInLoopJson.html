@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h2>Creation d'une JSON a partir d'un objet JavaScript</h2>
+    <p id="demo"></p>
+  </body>
+  <script>
+    var obj = { Nom: "Boutissante", age: 30, Ville: "Marrakech" };
+    for (const key in obj) {
+      document.getElementById("demo").innerHTML +=
+        key + "=" + obj[key] + "<br>";
+    }
+  </script>
+</html>
